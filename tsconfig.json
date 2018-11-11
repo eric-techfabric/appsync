@@ -4,6 +4,8 @@
     "allowJs": true,
     "skipLibCheck": false,
     "esModuleInterop": true,
+    "lib": ["dom", "esnext"],
+    "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
@@ -14,7 +16,5 @@
     "noEmit": true,
     "jsx": "preserve"
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }
