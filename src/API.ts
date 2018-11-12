@@ -2,153 +2,162 @@
 //  This file was automatically generated and should not be edited.
 
 export type CreateAuctionInput = {
-  id?: string | null,
-  name: string,
-  price: number,
+  id?: string | null;
+  name: string;
+  price: number;
 };
 
 export type UpdateAuctionInput = {
-  id: string,
-  name?: string | null,
-  price?: number | null,
+  id: string;
+  name?: string | null;
+  price?: number | null;
 };
 
 export type DeleteAuctionInput = {
-  id?: string | null,
+  id?: string | null;
 };
 
 export type ModelAuctionFilterInput = {
-  id?: ModelIDFilterInput | null,
-  name?: ModelStringFilterInput | null,
-  price?: ModelFloatFilterInput | null,
-  and?: Array< ModelAuctionFilterInput | null > | null,
-  or?: Array< ModelAuctionFilterInput | null > | null,
-  not?: ModelAuctionFilterInput | null,
+  id?: ModelIDFilterInput | null;
+  name?: ModelStringFilterInput | null;
+  price?: ModelFloatFilterInput | null;
+  and?: Array<ModelAuctionFilterInput | null> | null;
+  or?: Array<ModelAuctionFilterInput | null> | null;
+  not?: ModelAuctionFilterInput | null;
 };
 
 export type ModelIDFilterInput = {
-  ne?: string | null,
-  eq?: string | null,
-  le?: string | null,
-  lt?: string | null,
-  ge?: string | null,
-  gt?: string | null,
-  contains?: string | null,
-  notContains?: string | null,
-  between?: Array< string | null > | null,
-  beginsWith?: string | null,
+  ne?: string | null;
+  eq?: string | null;
+  le?: string | null;
+  lt?: string | null;
+  ge?: string | null;
+  gt?: string | null;
+  contains?: string | null;
+  notContains?: string | null;
+  between?: Array<string | null> | null;
+  beginsWith?: string | null;
 };
 
 export type ModelStringFilterInput = {
-  ne?: string | null,
-  eq?: string | null,
-  le?: string | null,
-  lt?: string | null,
-  ge?: string | null,
-  gt?: string | null,
-  contains?: string | null,
-  notContains?: string | null,
-  between?: Array< string | null > | null,
-  beginsWith?: string | null,
+  ne?: string | null;
+  eq?: string | null;
+  le?: string | null;
+  lt?: string | null;
+  ge?: string | null;
+  gt?: string | null;
+  contains?: string | null;
+  notContains?: string | null;
+  between?: Array<string | null> | null;
+  beginsWith?: string | null;
 };
 
 export type ModelFloatFilterInput = {
-  ne?: number | null,
-  eq?: number | null,
-  le?: number | null,
-  lt?: number | null,
-  ge?: number | null,
-  gt?: number | null,
-  contains?: number | null,
-  notContains?: number | null,
-  between?: Array< number | null > | null,
+  ne?: number | null;
+  eq?: number | null;
+  le?: number | null;
+  lt?: number | null;
+  ge?: number | null;
+  gt?: number | null;
+  contains?: number | null;
+  notContains?: number | null;
+  between?: Array<number | null> | null;
 };
 
 export type CreateAuctionMutationVariables = {
-  input: CreateAuctionInput,
+  input: CreateAuctionInput;
 };
 
 export type CreateAuctionMutation = {
-  createAuction:  {
-    id: string,
-    name: string,
-    price: number,
-  } | null,
+  createAuction: {
+    __typename: 'Auction';
+    id: string;
+    name: string;
+    price: number;
+  } | null;
 };
 
 export type UpdateAuctionMutationVariables = {
-  input: UpdateAuctionInput,
+  input: UpdateAuctionInput;
 };
 
 export type UpdateAuctionMutation = {
-  updateAuction:  {
-    id: string,
-    name: string,
-    price: number,
-  } | null,
+  updateAuction: {
+    __typename: 'Auction';
+    id: string;
+    name: string;
+    price: number;
+  } | null;
 };
 
 export type DeleteAuctionMutationVariables = {
-  input: DeleteAuctionInput,
+  input: DeleteAuctionInput;
 };
 
 export type DeleteAuctionMutation = {
-  deleteAuction:  {
-    id: string,
-    name: string,
-    price: number,
-  } | null,
+  deleteAuction: {
+    __typename: 'Auction';
+    id: string;
+    name: string;
+    price: number;
+  } | null;
 };
 
 export type GetAuctionQueryVariables = {
-  id: string,
+  id: string;
 };
 
 export type GetAuctionQuery = {
-  getAuction:  {
-    id: string,
-    name: string,
-    price: number,
-  } | null,
+  getAuction: {
+    __typename: 'Auction';
+    id: string;
+    name: string;
+    price: number;
+  } | null;
 };
 
 export type ListAuctionsQueryVariables = {
-  filter?: ModelAuctionFilterInput | null,
-  limit?: number | null,
-  nextToken?: string | null,
+  filter?: ModelAuctionFilterInput | null;
+  limit?: number | null;
+  nextToken?: string | null;
 };
 
 export type ListAuctionsQuery = {
-  listAuctions:  {
-    items:  Array< {
-      id: string,
-      name: string,
-      price: number,
-    } | null > | null,
-    nextToken: string | null,
-  } | null,
+  listAuctions: {
+    __typename: 'ModelAuctionConnection';
+    items: Array<{
+      __typename: 'Auction';
+      id: string;
+      name: string;
+      price: number;
+    } | null> | null;
+    nextToken: string | null;
+  } | null;
 };
 
 export type OnCreateAuctionSubscription = {
-  onCreateAuction:  {
-    id: string,
-    name: string,
-    price: number,
-  } | null,
+  onCreateAuction: {
+    __typename: 'Auction';
+    id: string;
+    name: string;
+    price: number;
+  } | null;
 };
 
 export type OnUpdateAuctionSubscription = {
-  onUpdateAuction:  {
-    id: string,
-    name: string,
-    price: number,
-  } | null,
+  onUpdateAuction: {
+    __typename: 'Auction';
+    id: string;
+    name: string;
+    price: number;
+  } | null;
 };
 
 export type OnDeleteAuctionSubscription = {
-  onDeleteAuction:  {
-    id: string,
-    name: string,
-    price: number,
-  } | null,
+  onDeleteAuction: {
+    __typename: 'Auction';
+    id: string;
+    name: string;
+    price: number;
+  } | null;
 };

@@ -37,7 +37,7 @@ export const CreateAuctionForm = () => {
 
               optimisticResponse: {
                 createAuction: {
-                  //   __typename: 'Auction',
+                  __typename: 'Auction',
                   id: '-1',
                   name,
                   price
