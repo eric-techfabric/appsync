@@ -1,5 +1,5 @@
 projects:
-  Auction:
+  AuthAuction:
     schemaPath: src/graphql/schema.json
     includes:
       - src/graphql/**/*.ts
@@ -10,7 +10,7 @@ projects:
         codeGenTarget: typescript
         generatedFileName: src/API.ts
         docsFilePath: src/graphql
-        graphQLApiId: u6qynf77prb4do3evr5nmgup3u
+        graphQLApiId: zyuv6pl6l5eo3luhhyd26w4x5u
       endpoints:
         prod: >-
-          https://tqtjn7bzbjc4bezgwokei4o36m.appsync-api.us-west-2.amazonaws.com/graphql
+          https://v4f4cncc7zarjng4mwrsvjxbam.appsync-api.us-west-2.amazonaws.com/graphql

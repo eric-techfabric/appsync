@@ -1,0 +1,13 @@
+{
+    "AppSyncApiName": "AuthAuction",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authcognitoe4f6133a",
+            "Outputs.UserPoolId"
+        ]
+    },
+    "schemaGraphql": "s3://appysnc-20181110184705-deployment/amplify-appsync-files/schema.graphql.1541992990014",
+    "ResolverBucket": "appysnc-20181110184705-deployment",
+    "ResolverRootKey": "amplify-appsync-files",
+    "DeploymentTimestamp": "1541992990014"
+}
