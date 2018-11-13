@@ -7,4 +7,4 @@
 - Typescript
 - GraphQL/Apollo
 
-Leverages React 16.7 alpha to utilize React hooks.
+This project leverages React 16.7 alpha to utilize React hooks.
